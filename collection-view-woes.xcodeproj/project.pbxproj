@@ -12,6 +12,12 @@
 		E7B02887206596E300656013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B02885206596E300656013 /* Main.storyboard */; };
 		E7B02889206596E300656013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B02888206596E300656013 /* Assets.xcassets */; };
 		E7B0288C206596E300656013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B0288A206596E300656013 /* LaunchScreen.storyboard */; };
+		E7B028962065981B00656013 /* CarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B028952065981B00656013 /* CarouselCell.xib */; };
+		E7B028982065982700656013 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B028972065982700656013 /* CarouselCell.swift */; };
+		E7B0289A206598AB00656013 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B02899206598AB00656013 /* CarouselViewController.swift */; };
+		E7B0289C2065997A00656013 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0289B2065997A00656013 /* MockData.swift */; };
+		E7B028A020659E1A00656013 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0289F20659E1A00656013 /* UIView+.swift */; };
+		E7B4110A2065A9D5003C5D0D /* CarouselViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B411092065A9D5003C5D0D /* CarouselViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E7B02888206596E300656013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B0288B206596E300656013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7B0288D206596E300656013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B028952065981B00656013 /* CarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCell.xib; sourceTree = "<group>"; };
+		E7B028972065982700656013 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		E7B02899206598AB00656013 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		E7B0289B2065997A00656013 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		E7B0289F20659E1A00656013 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		E7B411092065A9D5003C5D0D /* CarouselViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarouselViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,36 @@
 		E7B02880206596E300656013 /* collection-view-woes */ = {
 			isa = PBXGroup;
 			children = (
+				E7B0289E20659E1100656013 /* Extensions */,
+				E7B0289D2065998200656013 /* Data */,
 				E7B02881206596E300656013 /* AppDelegate.swift */,
-				E7B02883206596E300656013 /* ViewController.swift */,
 				E7B02885206596E300656013 /* Main.storyboard */,
+				E7B02883206596E300656013 /* ViewController.swift */,
+				E7B411092065A9D5003C5D0D /* CarouselViewController.storyboard */,
+				E7B02899206598AB00656013 /* CarouselViewController.swift */,
+				E7B028952065981B00656013 /* CarouselCell.xib */,
+				E7B028972065982700656013 /* CarouselCell.swift */,
 				E7B02888206596E300656013 /* Assets.xcassets */,
 				E7B0288A206596E300656013 /* LaunchScreen.storyboard */,
 				E7B0288D206596E300656013 /* Info.plist */,
 			);
 			path = "collection-view-woes";
+			sourceTree = "<group>";
+		};
+		E7B0289D2065998200656013 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0289B2065997A00656013 /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E7B0289E20659E1100656013 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0289F20659E1A00656013 /* UIView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B0288C206596E300656013 /* LaunchScreen.storyboard in Resources */,
+				E7B4110A2065A9D5003C5D0D /* CarouselViewController.storyboard in Resources */,
+				E7B028962065981B00656013 /* CarouselCell.xib in Resources */,
 				E7B02889206596E300656013 /* Assets.xcassets in Resources */,
 				E7B02887206596E300656013 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B028A020659E1A00656013 /* UIView+.swift in Sources */,
+				E7B0289A206598AB00656013 /* CarouselViewController.swift in Sources */,
+				E7B028982065982700656013 /* CarouselCell.swift in Sources */,
 				E7B02884206596E300656013 /* ViewController.swift in Sources */,
 				E7B02882206596E300656013 /* AppDelegate.swift in Sources */,
+				E7B0289C2065997A00656013 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJPFLH48H5;
 				INFOPLIST_FILE = "collection-view-woes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.derrickshowers.collection-view-woes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJPFLH48H5;
 				INFOPLIST_FILE = "collection-view-woes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.derrickshowers.collection-view-woes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
